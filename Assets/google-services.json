@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558395967409",
+    "project_id": "autism-learning-flashcar-9e647",
+    "storage_bucket": "autism-learning-flashcar-9e647.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558395967409:android:f7e71c34d967f011555f90",
+        "android_client_info": {
+          "package_name": "com.amc.flash.cards.autism"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMAyEe_cUIuFfXvJf_2gTVG-LgeaYgNXY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
