@@ -17,10 +17,16 @@ public class ToyScript : MonoBehaviour
 
         if (ResCheck.ResolutionType== ResType.tab)
         {
-            transform.position = new Vector3(0.75f, 0.63f, 0f);
+            transform.position = new Vector3(0.75f, 0.31f, 0f);
             transform.localScale = new Vector3(0.96f, 0.96f, 0.96f);
 
-            Butons.transform.localPosition = new Vector3(54f, 0f, 0f);
+            Butons.transform.localPosition = new Vector3(82f, 14f, 0f);
+            Butons.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(-143f, -225f); 
+            Butons.transform.GetChild(0).transform.localScale = new Vector3(1.06f, 1.06f, 1.06f);
+
+            Butons.transform.GetChild(1).GetComponent<RectTransform>().anchoredPosition = new Vector2(-143f, -342f);
+            Butons.transform.GetChild(1).transform.localScale = new Vector3(0.94f, 0.94f, 0.94f);
+
         }
     }
     public void JumpDemoOnPlace(Sprite pickedCard,Vector2 cardPickedPos)

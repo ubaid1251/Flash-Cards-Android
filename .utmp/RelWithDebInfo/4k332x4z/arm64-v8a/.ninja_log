@@ -1,0 +1,23 @@
+# ninja log v5
+39094	40015	1778104626866566790	/Users/sameen/Documents/GitHub/Flash-Cards-Android/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4k332x4z/obj/arm64-v8a/libgame.so	de83ca3187c746ae
+21268	35549	1778104622405942175	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1d175e468e58a3d7
+21278	39092	1778104625950118793	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9c242c7b8f31d8ae
+11	26506	1778104613360812176	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5165086c862c3000
+1	28147	1778104614993829796	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e0738ff003dba8a
+23787	26035	1778104612893417386	/Users/sameen/Documents/GitHub/Flash-Cards-Android/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4k332x4z/obj/arm64-v8a/libswappywrapper.so	ba38b38e38f1125e
+21590	23786	1778104610637102536	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	527788748765559a
+6	22651	1778104609467749469	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	bb24707b612a72b5
+3	21589	1778104608442992481	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	fb28fecfdb5d137f
+9	21278	1778104608062806179	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a245f5729cb0870
+14	21226	1778104608055572690	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	aaf2417e5609e2ba
+37	10250	1778240631268825925	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a245f5729cb0870
+45	10270	1778240631297907407	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	aaf2417e5609e2ba
+35	10480	1778240631502255731	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	fb28fecfdb5d137f
+36	11251	1778240632264430633	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	bb24707b612a72b5
+10481	11469	1778240632509492694	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	527788748765559a
+11469	12208	1778240633247607077	/Users/sameen/Documents/GitHub/Flash-Cards-Android/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4k332x4z/obj/arm64-v8a/libswappywrapper.so	ba38b38e38f1125e
+40	13412	1778240634421595569	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	5165086c862c3000
+33	14341	1778240635337270123	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	e0738ff003dba8a
+10251	16777	1778240637802260755	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	1d175e468e58a3d7
+10271	17462	1778240638472101750	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	9c242c7b8f31d8ae
+17463	17790	1778240638821800111	/Users/sameen/Documents/GitHub/Flash-Cards-Android/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4k332x4z/obj/arm64-v8a/libgame.so	de83ca3187c746ae

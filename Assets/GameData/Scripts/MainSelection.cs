@@ -53,6 +53,7 @@ public class MainSelection : MonoBehaviour
     public void SelectCategory(int catIndex)
     {
         SoundHandler.instance.PlayClick();
+                IntitializeAdmob.instance.ShowInterstitial();
         InitializeFirebase_CB.instance.LogFirebaseEvent("Category_Number_" + catIndex);
         BG_Img.GetComponent<Image>().sprite = Bgs[catIndex];
         notSelected[preSelected].SetActive(true);

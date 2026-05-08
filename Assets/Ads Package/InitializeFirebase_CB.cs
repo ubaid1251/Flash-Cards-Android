@@ -1,6 +1,6 @@
 using Firebase;
 using Firebase.Extensions;
-using Firebase.RemoteConfig;
+//using Firebase.RemoteConfig;
 using System;
 using System.Collections;
 using UnityEngine;
@@ -60,37 +60,7 @@ public class InitializeFirebase_CB : MonoBehaviour
         }
     }
     string TestA,TestB, TestC;
-    void FetchCompletePopUp()
-    {
-
-        FirebaseRemoteConfig.DefaultInstance.FetchAndActivateAsync().ContinueWithOnMainThread(task =>
-        {
-            TestA = FirebaseRemoteConfig.DefaultInstance.GetValue("DoubleBanner").StringValue;
-            TestB = FirebaseRemoteConfig.DefaultInstance.GetValue("DoubleBanner").StringValue;
-            Debug.Log("after Get Value => " + TestA);
-            Debug.Log("after Get Value => " + TestB);
-            // TestB = FirebaseRemoteConfig.DefaultInstance.GetValue("InterstitalDelay").StringValue;
-            // Debug.Log("Direct Remote Value => " + FirebaseRemoteConfig.DefaultInstance.GetValue("RemoveAds").StringValue);
-            // Debug.Log("Direct Remote Value => " + FirebaseRemoteConfig.DefaultInstance.GetValue("InterstitalDelay").StringValue);
-            // PlayerPrefs.SetString("RemoveAds", TestA);
-            //PlayerPrefs.SetString("DoubleBanner",TestA);
-            PlayerPrefs.SetInt("DoubleBanner", int.Parse(TestA));
-            PlayerPrefs.SetInt("RemoveInter", int.Parse(TestB));
-            if (int.Parse(TestA) == 1)
-            {
-                isBanner = true;
-            }
-            if (int.Parse(TestB) == 1)
-            {
-                removeInter = true;
-            }
-            print("FetchCompletePopUp");
-            print(PlayerPrefs.GetInt("DoubleBanner") + " DoubleBannerVal");
-            if (PlayerPrefs.GetInt("RemoveAds") == 0)
-                IntitializeAdmob.instance.RequestConsent();
-        });
-
-    }
+    
     public void LogFirebaseEvent(string CustomEvent)
     {
         if(IsValidEventName(CustomEvent))

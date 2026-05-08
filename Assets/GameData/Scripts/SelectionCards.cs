@@ -8,7 +8,7 @@ public class SelectionCards : MonoBehaviour
         IntitializeAdmob.instance.ShowInterstitial();
     }
 
-    public void RestorePurchase()
+    public void PlayClick()
     {
         SoundHandler.instance.PlayClick();
 
@@ -16,6 +16,7 @@ public class SelectionCards : MonoBehaviour
     }
     public void LoadGameplay(int CardNum)
     {
+                SoundHandler.instance.PlayClick();
         InitializeFirebase_CB.instance.LogFirebaseEvent("Selection_Category_Number_" + CardNum);
         PlayerPrefs.SetInt("CardCategory", CardNum);
         SceneManager.LoadScene("Gameplay");
