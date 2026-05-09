@@ -18555,7 +18555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -73.00006, y: -390.99963}
+  m_AnchoredPosition: {x: -73.00012, y: -390.99963}
   m_SizeDelta: {x: 101, y: 104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694706995
@@ -26016,6 +26016,10 @@ PrefabInstance:
     - target: {fileID: 1045807250844582560, guid: 433b039235a8b4b0489709c7dd547f65, type: 3}
       propertyPath: m_Name
       value: BannerImg
+      objectReference: {fileID: 0}
+    - target: {fileID: 1045807250844582560, guid: 433b039235a8b4b0489709c7dd547f65, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5058489585336763797, guid: 433b039235a8b4b0489709c7dd547f65, type: 3}
       propertyPath: m_Pivot.x
@@ -58842,15 +58846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19f7606087c464f5393b1193f673ce36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panels:
-  - {fileID: 4961618055622793136}
-  - {fileID: 646870393914282662}
-  selectedIcons:
-  - {fileID: 8658348386892879890}
-  - {fileID: 8393139832500449177}
-  - {fileID: 5434692379085685616}
-  panel: {fileID: 3767565975913560582}
-  PrivacyLink: https://muhammadubaidprivacy.blogspot.com/2025/06/privacy-policy.html
 --- !u!1 &4542844093659431551
 GameObject:
   m_ObjectHideFlags: 0
