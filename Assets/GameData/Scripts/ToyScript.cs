@@ -5,28 +5,50 @@ using UnityEngine;
 
 public class ToyScript : MonoBehaviour
 {
-    public GameObject cardEntered,demoCard,Circle,Butons;
+    public GameObject cardEntered,demoCard,Circle,Butons,CategoriesObj;
     public Transform cardFinalPos;
     public static ToyScript ins;
     void Start()
     {
-        ins = this;        
+        ins = this;
     }
     private void Awake()
     {
 
-        if (ResCheck.ResolutionType== ResType.tab)
+        if (ResCheck.ResolutionType== ResType.tab && (PlayerPrefs.GetInt("RemoveAds")==0))
         {
             transform.position = new Vector3(0.75f, 0.31f, 0f);
             transform.localScale = new Vector3(0.96f, 0.96f, 0.96f);
 
             Butons.transform.localPosition = new Vector3(82f, 14f, 0f);
-            Butons.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(-143f, -225f); 
+            Butons.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(-143f, -225f);
             Butons.transform.GetChild(0).transform.localScale = new Vector3(1.06f, 1.06f, 1.06f);
 
             Butons.transform.GetChild(1).GetComponent<RectTransform>().anchoredPosition = new Vector2(-143f, -342f);
             Butons.transform.GetChild(1).transform.localScale = new Vector3(0.94f, 0.94f, 0.94f);
 
+        }
+
+        else if (ResCheck.ResolutionType== ResType.tab && (PlayerPrefs.GetInt("RemoveAds")==1))
+        {
+            transform.position = new Vector3(0.75f, 0.31f, 0f);
+            transform.localScale = new Vector3(0.96f, 0.96f, 0.96f);
+
+            Butons.transform.localPosition = new Vector3(0f, 0f, 0f);
+            Butons.transform.GetChild(0).transform.localScale = new Vector3(1.06f, 1.06f, 1.06f);
+
+            Butons.transform.GetChild(1).transform.localScale = new Vector3(0.94f, 0.94f, 0.94f);
+
+            Butons.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(-68f, -75f);
+            Butons.transform.GetChild(1).GetComponent<RectTransform>().anchoredPosition = new Vector2(-68f, -192f);
+            CategoriesObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(205f, 139f);
+
+        }
+        else if(PlayerPrefs.GetInt("RemoveAds")==1)
+        {
+             Butons.transform.GetChild(0).GetComponent<RectTransform>().anchoredPosition = new Vector2(-98f, -114f);
+             Butons.transform.GetChild(1).GetComponent<RectTransform>().anchoredPosition = new Vector2(-98f, -266f);
+             CategoriesObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(205f, 139f);
         }
     }
     public void JumpDemoOnPlace(Sprite pickedCard,Vector2 cardPickedPos)
@@ -47,7 +69,7 @@ public class ToyScript : MonoBehaviour
         {
            demoCard.transform.DOLocalMoveY(1.145f, 0.375f).SetEase(Ease.Linear);
         });
-        
+
         demoCard.transform.DOScale(.75f, .75f);
     }
     public void PlaySound()

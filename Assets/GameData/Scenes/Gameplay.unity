@@ -59656,6 +59656,7 @@ MonoBehaviour:
   demoCard: {fileID: 561607135}
   Circle: {fileID: 1215905042}
   Butons: {fileID: 608110292}
+  CategoriesObj: {fileID: 974908300}
   cardFinalPos: {fileID: 668425538}
 --- !u!114 &5665640063214857774
 MonoBehaviour:
